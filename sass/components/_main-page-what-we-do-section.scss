@@ -1,0 +1,37 @@
+.what-we-do-section {
+  &__container {
+    padding-top: 0px;
+    @include middleSpace;
+    @include verticalMiddleSpace;
+  }
+
+  &__image-title {
+    margin-bottom: 5rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: $black;
+    text-align: center;
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box-overlay {
+    position: relative;
+  }
+
+  &__image-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2.7rem 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

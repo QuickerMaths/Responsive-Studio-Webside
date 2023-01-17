@@ -1,0 +1,26 @@
+.contact-info {
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    margin-left: 9.3rem;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+      fill: $blue;
+    }
+  }
+
+  &__link,
+  &__item {
+    color: $gray;
+    fill: $gray;
+    transition: color, fill 0.25s $cubic;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: lowercase;
+  }
+}

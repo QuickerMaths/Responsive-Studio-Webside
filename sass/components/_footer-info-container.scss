@@ -1,0 +1,22 @@
+.info-container {
+  margin-top: 2rem;
+
+  &__address {
+    color: #fff;
+  }
+
+  &__address,
+  &__link {
+    line-height: 1.7;
+  }
+
+  &__link {
+    color: var(--gray);
+    transition: color 0.25s $cubic;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+}

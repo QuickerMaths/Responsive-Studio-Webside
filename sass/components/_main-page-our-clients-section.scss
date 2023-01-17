@@ -1,0 +1,38 @@
+.our-clients-section {
+  &__container {
+    @include verticalMiddleSpace;
+    @include middleSpace;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__svg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__svg-icon {
+    fill: $graySvg;
+    cursor: pointer;
+    border: 1px solid $graySvg;
+    border-radius: 0.4rem;
+    transition: fill, border 0.25s $cubic;
+
+    .our-clients-section__link:focus & {
+      fill: $blue;
+      border: 1px solid $blue;
+    }
+
+    &:hover,
+    &:active {
+      fill: $blue;
+      border: 1px solid $blue;
+    }
+  }
+}

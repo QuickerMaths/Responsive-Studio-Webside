@@ -1,0 +1,43 @@
+.social-media-section {
+  margin: 1.2rem 0 0 7rem;
+}
+
+.social-media {
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    transition: background 0.25s $cubic;
+  }
+
+  &__svg-icon {
+    cursor: pointer;
+    fill: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    padding-inline: 1.2rem;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    transition: background 0.25s $cubic;
+
+    &:nth-child(4) {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      background: $blue;
+    }
+    .social-media__link:focus & {
+      background: $blue;
+    }
+  }
+}

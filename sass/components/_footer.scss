@@ -1,0 +1,9 @@
+.footer {
+  background-color: $blackBackground;
+  padding: 6rem 0;
+
+  &__container {
+    display: flex;
+    @include middleSpace;
+  }
+}

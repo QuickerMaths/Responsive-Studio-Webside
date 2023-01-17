@@ -1,0 +1,6 @@
+.main-portfolio {
+  &__container {
+    @include middleSpace;
+    @include verticalMiddleSpace;
+  }
+}

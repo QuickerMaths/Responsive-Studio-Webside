@@ -1,0 +1,14 @@
+.logo {
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #000000;
+
+  &__span {
+    color: $blue;
+  }
+
+  &.footer__logo {
+    color: #fff;
+  }
+}

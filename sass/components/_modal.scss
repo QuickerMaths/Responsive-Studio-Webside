@@ -1,0 +1,182 @@
+// Backdrop
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 20;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility, opacity 0.25s $cubic;
+}
+
+// Hidden Class
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+
+  .modal {
+    transform: scale(0);
+  }
+}
+
+// Modal
+
+.modal {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.25s $cubic;
+
+  &__close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 4rem 0 1.2rem 0;
+    text-transform: none;
+    margin: 0 4rem;
+  }
+}
+
+// Modal form
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    display: grid;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.875;
+    color: #fff;
+    padding: 1rem 7.6rem;
+    margin: 0 16.4rem 4rem 16.4rem;
+    max-width: 20rem;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: box-shadow 0.25s $cubic;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+// Label Container
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+}
+
+// Label form
+
+.label {
+  margin: 0 4rem;
+  color: $gray;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 0.4rem;
+
+  &__input-container {
+    position: relative;
+    margin: 0 4rem 1rem 4rem;
+  }
+
+  &__input {
+    padding: 1.2rem 0px 1.2rem 4.2rem;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 0.4rem;
+    outline: none;
+    transition: border 0.25s $cubic;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.5rem;
+    transition: fill 0.25s $cubic;
+
+    .label__input:hover + &,
+    .label__input:focus + & {
+      fill: $blue;
+    }
+  }
+
+  &__textarea {
+    margin: 0 4rem 2rem 4rem;
+    padding: 1.2rem 1.6rem;
+    border: 0.1rem solid rgba(33, 33, 33, 0.2);
+    border-radius: 0.4rem;
+    outline: none;
+    resize: none;
+    transition: border 0.25s $cubic;
+
+    &:focus,
+    &:hover {
+      border: 0.1rem solid $blue;
+    }
+  }
+}
+
+// Checkbox Label
+
+.checkbox-label {
+  position: relative;
+  text-transform: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.75;
+  margin-bottom: 3rem;
+
+  &__checkbox {
+    margin-right: 0.8rem;
+    appearance: none;
+    border: 0.2rem solid $black;
+    border-radius: 0.2rem;
+    width: 1.6rem;
+    height: 1.5rem;
+  }
+
+  &__checkbox-svg-checked {
+    position: absolute;
+    left: 6.4rem;
+    opacity: 0;
+    transition: opacity 0.25s $cubic;
+
+    .checkbox-label__checkbox:checked + & {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    color: $blue;
+    text-decoration: underline;
+  }
+}

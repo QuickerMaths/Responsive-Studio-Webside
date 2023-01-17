@@ -1,0 +1,79 @@
+// Fonts import
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+// Components and Utils imports
+
+@import "utils/vars";
+@import "components/modal";
+@import "components/logo";
+@import "components/header";
+@import "components/header-navigation";
+@import "components/header-contact-info";
+@import "components/footer";
+@import "components/footer-info-container";
+@import "components/footer-social-media";
+@import "components/footer-newsletter";
+@import "components/main-page-hero-section";
+@import "components/main-page-specialization-section";
+@import "components/main-page-what-we-do-section";
+@import "components/main-page-our-team-section";
+@import "components/main-page-our-clients-section";
+@import "components/portfolio-page-main";
+@import "components/portfolio-page-filters";
+@import "components/portfolio-page-articles";
+
+// Mixins
+
+@mixin middleSpace() {
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 20%;
+}
+
+@mixin verticalMiddleSpace() {
+  padding: 94px 0;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Global Styles
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-size: 1.4rem;
+  color: $gray;
+  text-transform: capitalize;
+  min-height: 100vh;
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: $black;
+}
+
+ul {
+  list-style-type: none;
+}
