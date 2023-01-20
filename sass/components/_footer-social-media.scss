@@ -11,16 +11,11 @@
     color: #fff;
     font-weight: 700;
     margin-bottom: 2rem;
-    text-align: center; // remove
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 6rem; //remove
+    text-align: center;
   }
 
   &__list {
     display: flex;
-    // align-items: center;
     justify-content: center;
   }
 

@@ -3,15 +3,21 @@
 
   &__container {
     margin: 0 auto;
-    width: clamp(32rem, 80%, 120rem);
-    padding: 9.4rem 0;
+    width: clamp(32rem, 70%, 120rem);
+    padding: 6rem 0;
 
     @media (min-width: 768px) {
       & {
         width: clamp(32rem, 100%, 120rem);
       }
     }
-    @media (min-width: 1060px) and (max-width: 1199px) {
+
+    @media (min-width: 850px) and (max-width: 1049px) {
+      & {
+        width: clamp(32rem, 90%, 120rem);
+      }
+    }
+    @media (min-width: 1050px) and (max-width: 1199px) {
       & {
         width: clamp(32rem, 70%, 120rem);
       }
@@ -20,6 +26,7 @@
     @media (min-width: 1200px) {
       & {
         width: clamp(32rem, 100%, 120rem);
+        padding: 9.4rem 0;
       }
     }
   }
@@ -40,6 +47,7 @@
     @media (min-width: 768px) {
       & {
         grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+        gap: 3rem;
       }
     }
 
@@ -51,18 +59,6 @@
   }
 
   &__item {
-    @media (min-width: 768px) {
-      & {
-        margin-right: 3rem;
-
-        &:nth-child(4) {
-          margin-right: 0px;
-        }
-
-        width: 354px;
-      }
-    }
-
     @media (min-width: 1200px) {
       & {
         margin-right: 3rem;

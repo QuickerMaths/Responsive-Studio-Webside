@@ -12,15 +12,15 @@
   border-radius: 50%;
   outline: none;
 
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+
   &:hover,
   &:focus {
     background-color: rgba(0, 0, 0, 0.1);
-  }
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
   }
 }
 
@@ -99,16 +99,22 @@
   &__social-media-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__social-media-item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 1rem;
+    padding: 0px 1rem;
+
+    @media (min-width: 450px) {
+      & {
+        padding: 0px 2rem;
+      }
+    }
 
     &:last-child {
       border: none;
-      padding: 0px;
+      padding-right: 0px;
     }
   }
 

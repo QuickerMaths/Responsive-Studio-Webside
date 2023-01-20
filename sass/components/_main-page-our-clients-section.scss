@@ -2,7 +2,7 @@
   &__container {
     margin: 0 auto;
     width: clamp(32rem, 95%, 120rem);
-    padding: 9.4rem 0;
+    padding: 6rem 0;
 
     @media (min-width: 650px) {
       & {
@@ -10,9 +10,26 @@
       }
     }
 
+    @media (min-width: 768px) {
+      & {
+        & {
+          width: clamp(32rem, 100%, 120rem);
+        }
+      }
+    }
+
+    @media (min-width: 990px) {
+      & {
+        & {
+          width: clamp(32rem, 80%, 120rem);
+        }
+      }
+    }
+
     @media (min-width: 1200px) {
       & {
         width: clamp(32rem, 100%, 120rem);
+        padding: 9.4rem 0;
       }
     }
   }
