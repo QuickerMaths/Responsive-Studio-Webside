@@ -2,20 +2,77 @@
   background-color: #fff;
 
   &__container {
-    @include middleSpace;
-    @include verticalMiddleSpace;
+    margin: 0 auto;
+    width: clamp(32rem, 80%, 120rem);
+    padding: 9.4rem 0;
+
+    @media (min-width: 768px) {
+      & {
+        width: clamp(32rem, 100%, 120rem);
+      }
+    }
+    @media (min-width: 1060px) and (max-width: 1199px) {
+      & {
+        width: clamp(32rem, 70%, 120rem);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        width: clamp(32rem, 100%, 120rem);
+      }
+    }
   }
 
   &__list {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    place-items: center;
+    place-content: center;
+    max-width: 100%;
+
+    @media (max-width: 450px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      }
+    }
   }
 
   &__item {
-    margin-right: 3rem;
+    @media (min-width: 768px) {
+      & {
+        margin-right: 3rem;
 
-    &:nth-child(4) {
-      margin-right: 0px;
+        &:nth-child(4) {
+          margin-right: 0px;
+        }
+
+        width: 354px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        margin-right: 3rem;
+
+        &:nth-child(4) {
+          margin-right: 0px;
+        }
+
+        width: 270px;
+      }
     }
   }
 
@@ -24,13 +81,15 @@
     width: 100%;
     border-radius: 0.4rem;
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
   }
 
   &__svg-icon {
     padding: 2.5rem 0;
 
     &:nth-child(1) {
-      width: 27rem;
+      width: 7rem;
       height: 12rem;
     }
 
@@ -56,9 +115,12 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     color: $black;
+    text-align: center;
   }
 
   &__text {
     line-height: 1.875;
+    margin-bottom: 3rem;
+    width: 100%;
   }
 }

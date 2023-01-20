@@ -1,7 +1,20 @@
 .our-clients-section {
   &__container {
-    @include verticalMiddleSpace;
-    @include middleSpace;
+    margin: 0 auto;
+    width: clamp(32rem, 95%, 120rem);
+    padding: 9.4rem 0;
+
+    @media (min-width: 650px) {
+      & {
+        width: clamp(32rem, 70%, 120rem);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        width: clamp(32rem, 100%, 120rem);
+      }
+    }
   }
 
   &__title {
@@ -12,9 +25,22 @@
   }
 
   &__svg-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    gap: 3rem;
+    place-content: center;
+    place-items: center;
+
+    @media (min-width: 768px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(22.6rem, 1fr));
+      }
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(17rem, 9.2rem));
+      grid-auto-flow: column;
+    }
   }
 
   &__svg-icon {
@@ -23,6 +49,20 @@
     border: 1px solid $graySvg;
     border-radius: 0.4rem;
     transition: fill, border 0.25s $cubic;
+    width: 21rem;
+    height: 9.2rem;
+
+    @media (min-width: 768px) {
+      & {
+        width: 22.6rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        width: 17rem;
+      }
+    }
 
     .our-clients-section__link:focus & {
       fill: $blue;

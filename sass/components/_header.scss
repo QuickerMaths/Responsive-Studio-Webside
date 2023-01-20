@@ -1,18 +1,18 @@
 .header {
-  display: flex;
   padding: 2.4rem 0;
   border-bottom: 1px solid #ececec;
-
-  & .navigation__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include middleSpace();
+    margin: 0 auto;
+    width: clamp(32rem, 95%, 120rem);
+  }
+
+  & .navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

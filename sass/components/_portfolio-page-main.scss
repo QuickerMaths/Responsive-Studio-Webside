@@ -1,6 +1,8 @@
 .main-portfolio {
   &__container {
-    @include middleSpace;
-    @include verticalMiddleSpace;
+    margin: 0 auto;
+    width: 120rem;
+    min-width: 20%;
+    padding: 9.4rem 0;
   }
 }

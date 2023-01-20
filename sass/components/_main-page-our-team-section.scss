@@ -2,8 +2,21 @@
   background-color: $whiteBackground;
 
   &__container {
-    @include verticalMiddleSpace;
-    @include middleSpace;
+    margin: 0 auto;
+    width: clamp(32rem, 100%, 120rem);
+    padding: 9.4rem 0;
+
+    @media (min-width: 1050px) {
+      & {
+        width: clamp(32rem, 80%, 120rem);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        width: clamp(32rem, 100%, 120rem);
+      }
+    }
   }
 
   &__title {
@@ -14,15 +27,29 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    place-items: center;
+    place-content: center;
+
+    @media (min-width: 768px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(35.4rem, 1fr));
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+      }
+    }
   }
 
   &__item {
     line-height: 0px;
   }
 
-  &__image {
+  &__card {
     margin-top: 5rem;
   }
 

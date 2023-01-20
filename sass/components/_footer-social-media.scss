@@ -1,5 +1,9 @@
 .social-media-section {
-  margin: 1.2rem 0 0 7rem;
+  @media (min-width: 1200px) {
+    & {
+      margin: 1.2rem 0 0 7rem;
+    }
+  }
 }
 
 .social-media {
@@ -7,11 +11,17 @@
     color: #fff;
     font-weight: 700;
     margin-bottom: 2rem;
+    text-align: center; // remove
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 6rem; //remove
   }
 
   &__list {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    justify-content: center;
   }
 
   &__link {

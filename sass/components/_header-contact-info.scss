@@ -1,6 +1,12 @@
 .contact-info {
   &__list {
     display: flex;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      & {
+        flex-direction: column;
+      }
+    }
   }
 
   &__link {
@@ -13,6 +19,14 @@
     }
   }
 
+  &__item {
+    @media (min-width: 768px) and (max-width: 1200px) {
+      &:last-child {
+        margin-top: 1rem;
+      }
+    }
+  }
+
   &__link,
   &__item {
     color: $gray;
@@ -22,5 +36,11 @@
     align-items: center;
     gap: 1rem;
     text-transform: lowercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    display: none;
   }
 }

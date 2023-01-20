@@ -4,6 +4,30 @@
 
   &__container {
     display: flex;
-    @include middleSpace;
+    flex-direction: column;
+    margin: 0 auto;
+    width: clamp(32rem, 80%, 120rem);
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      & {
+        width: clamp(32rem, $footerWidth, 120rem);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        flex-direction: row;
+        width: clamp(32rem, 95%, 120rem);
+      }
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

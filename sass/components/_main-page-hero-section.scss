@@ -7,19 +7,41 @@
 
   &__container {
     padding: 20rem 0;
-    @include flexCenter;
+    min-width: 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
   &__title {
     font-weight: 900;
-    font-size: 4.4rem;
+    font-size: 2.6rem;
     line-height: 1.35;
     color: #ffffff;
     text-align: center;
-    margin: 0 25.2rem 3rem 25.2rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    display: inline-block;
+    width: clamp(35rem, 80%, 69.9rem);
+
+    @media (min-width: 700px) {
+      & {
+        width: clamp(35rem, 65%, 69.9rem);
+      }
+    }
+
+    @media (min-width: 768px) {
+      & {
+        width: clamp(35rem, 70%, 69.9rem);
+        font-size: calc(2.6rem + 70%);
+      }
+    }
+
+    // @media (min-width: 1200px) {
+    //   font-size: 4.4rem;
+    // }
   }
 
   &__button {

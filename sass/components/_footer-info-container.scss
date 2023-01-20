@@ -1,5 +1,21 @@
+.main-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .info-container {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    & {
+      text-align: left;
+    }
+  }
 
   &__address {
     color: #fff;

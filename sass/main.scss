@@ -9,6 +9,7 @@
 @import "components/header";
 @import "components/header-navigation";
 @import "components/header-contact-info";
+@import "components/header-mobile-menu-open-button";
 @import "components/footer";
 @import "components/footer-info-container";
 @import "components/footer-social-media";
@@ -21,24 +22,7 @@
 @import "components/portfolio-page-main";
 @import "components/portfolio-page-filters";
 @import "components/portfolio-page-articles";
-
-// Mixins
-
-@mixin middleSpace() {
-  margin: 0 auto;
-  width: 1200px;
-  min-width: 20%;
-}
-
-@mixin verticalMiddleSpace() {
-  padding: 94px 0;
-}
-
-@mixin flexCenter() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import "components/mobile-menu";
 
 // Global Styles
 
@@ -51,6 +35,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-y: scroll;
 }
 
 html::-webkit-scrollbar {
