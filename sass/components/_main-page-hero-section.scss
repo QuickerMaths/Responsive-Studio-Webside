@@ -1,17 +1,36 @@
 .hero-section {
-  background-image: url(../images/topSection-background\ img.jpg);
+  background-image: url(../images/header-img-mobile.png);
   background-color: rgba(47, 48, 58, 0.4);
   background-position: center;
   background-size: cover;
   background-blend-mode: darken;
 
+  @media (min-width: 768px) {
+    & {
+      background-image: url(../images/heasre-img-tablet.png);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & {
+      background-image: url(../images/topSection-background\ img.jpg);
+    }
+  }
+
   &__container {
     padding: 20rem 0;
     min-width: 32rem;
+    height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (min-width: 1200px) {
+      & {
+        height: 60rem;
+      }
+    }
   }
 
   &__title {
@@ -32,16 +51,21 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 890px) {
       & {
         width: clamp(35rem, 70%, 69.9rem);
-        font-size: calc(2.6rem + 70%);
       }
     }
 
-    // @media (min-width: 1200px) {
-    //   font-size: 4.4rem;
-    // }
+    @media (min-width: 891px) and (max-width: 1199px) {
+      & {
+        width: clamp(35rem, 50%, 69.9rem);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 4.4rem;
+    }
   }
 
   &__button {

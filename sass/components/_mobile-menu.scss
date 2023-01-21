@@ -12,7 +12,7 @@
   border-radius: 50%;
   outline: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     & {
       display: none;
     }
@@ -69,6 +69,7 @@
 
   &__link {
     color: #000;
+    font-weight: 500;
 
     &:hover,
     &:focus {
@@ -96,6 +97,10 @@
     }
   }
 
+  &__phone {
+    color: $blue;
+  }
+
   &__social-media-list {
     display: flex;
     flex-direction: row;
@@ -121,5 +126,6 @@
   &__social-media-link {
     font-size: 1.8rem;
     color: $blue;
+    font-weight: 500;
   }
 }
