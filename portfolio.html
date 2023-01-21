@@ -21,6 +21,7 @@
         <a class="logo" href="index.html"
           ><span class="logo__span">Web</span>Studio</a
         >
+
         <!-- Navigation -->
         <nav class="navigation">
           <ul class="navigation__list">
@@ -61,6 +62,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- Mobile menu open button -->
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -97,10 +120,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile.png         450w,
+                    ./images/img-mobile-retina.png  900w,
+                    ./images/img-tablet.png         354w,
+                    ./images/img-tablet-retina.png  708w,
+                    ./images/img-desktop.png        370w,
+                    ./images/img-desktop-retina.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -118,10 +149,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-1-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-1.png         450w,
+                    ./images/img-mobile-retina-1.png  900w,
+                    ./images/img-tablet-1.png         354w,
+                    ./images/img-tablet-retina-1.png  708w,
+                    ./images/img-desktop-1.png        370w,
+                    ./images/img-desktop-retina-1.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -141,10 +180,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-2-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-2.png         450w,
+                    ./images/img-mobile-retina-2.png  900w,
+                    ./images/img-tablet-2.png         354w,
+                    ./images/img-tablet-retina-2.png  708w,
+                    ./images/img-desktop-2.png        370w,
+                    ./images/img-desktop-retina-2.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -162,10 +209,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-3-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-3.png         450w,
+                    ./images/img-mobile-retina-3.png  900w,
+                    ./images/img-tablet-3.png         354w,
+                    ./images/img-tablet-retina-3.png  708w,
+                    ./images/img-desktop-3.png        370w,
+                    ./images/img-desktop-retina-3.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -183,10 +238,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-4-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-4.png         450w,
+                    ./images/img-mobile-retina-4.png  900w,
+                    ./images/img-tablet-4.png         354w,
+                    ./images/img-tablet-retina-4.png  708w,
+                    ./images/img-desktop-4.png        370w,
+                    ./images/img-desktop-retina-4.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -204,10 +267,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-5-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-5.png         450w,
+                    ./images/img-mobile-retina-5.png  900w,
+                    ./images/img-tablet-5.png         354w,
+                    ./images/img-tablet-retina-5.png  708w,
+                    ./images/img-desktop-5.png        370w,
+                    ./images/img-desktop-retina-5.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -225,10 +296,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-6-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-6.png         450w,
+                    ./images/img-mobile-retina-6.png  900w,
+                    ./images/img-tablet-6.png         354w,
+                    ./images/img-tablet-retina-6.png  708w,
+                    ./images/img-desktop-6.png        370w,
+                    ./images/img-desktop-retina-6.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -246,10 +325,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-7-portfolio.jpg"
+                  srcset="
+                    ./images/img-mobile-7.png         450w,
+                    ./images/img-mobile-retina-7.png  900w,
+                    ./images/img-tablet-7.png         354w,
+                    ./images/img-tablet-retina-7.png  708w,
+                    ./images/img-desktop-7.png        370w,
+                    ./images/img-desktop-retina-7.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -267,10 +354,18 @@
             <li class="articles__item">
               <div class="articles__box-overlay">
                 <img
-                  src="./images/img-8-portfiolio.jpg"
+                  srcset="
+                    ./images/img-mobile-8.png         450w,
+                    ./images/img-mobile-retina-8.png  900w,
+                    ./images/img-tablet-8.png         354w,
+                    ./images/img-tablet-retina-8.png  708w,
+                    ./images/img-desktop-8.png        370w,
+                    ./images/img-desktop-retina-8.png 740w
+                  "
+                  sizes="(min-width: 1200px) 370px,
+                  (min-width: 768px) 354px,
+                  (min-width: 480px) 450px, 90vw"
                   alt="laptop"
-                  width="370"
-                  height="294"
                   class="articles__image"
                 />
                 <div class="articles__overlay">
@@ -294,57 +389,59 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <div class="main-section">
-          <a href="index.html" class="logo footer__logo"
-            ><span class="logo__span">Web</span>Studio</a
-          >
-          <div class="info-container">
-            <address class="info-container__address">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </address>
-            <ul class="info-container__list">
-              <li class="info-container__item">
-                <a class="info-container__link" href="#">info@example.com</a>
-              </li>
-              <li class="info-container__item">
-                <a class="info-container__link" href="#">+48 111 111 111</a>
-              </li>
-            </ul>
+        <div class="footer__wrapper">
+          <div class="main-section">
+            <a href="index.html" class="logo footer__logo"
+              ><span class="logo__span">Web</span>Studio</a
+            >
+            <div class="info-container">
+              <address class="info-container__address">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </address>
+              <ul class="info-container__list">
+                <li class="info-container__item">
+                  <a class="info-container__link" href="#">info@example.com</a>
+                </li>
+                <li class="info-container__item">
+                  <a class="info-container__link" href="#">+48 111 111 111</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="social-media-section">
-          <div class="social-media">
-            <h2 class="social-media__title">Dołącz do nas</h2>
-            <ul class="social-media__list">
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg width="20" height="20" class="social-media__svg-icon">
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg width="20" height="20" class="social-media__svg-icon">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg width="20" height="20" class="social-media__svg-icon">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg width="20" height="20" class="social-media__svg-icon">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="social-media-section">
+            <div class="social-media">
+              <h2 class="social-media__title">Dołącz do nas</h2>
+              <ul class="social-media__list">
+                <li class="social-media__item">
+                  <a href="#" class="social-media__link">
+                    <svg width="20" height="20" class="social-media__svg-icon">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a href="#" class="social-media__link">
+                    <svg width="20" height="20" class="social-media__svg-icon">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a href="#" class="social-media__link">
+                    <svg width="20" height="20" class="social-media__svg-icon">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media__item">
+                  <a href="#" class="social-media__link">
+                    <svg width="20" height="20" class="social-media__svg-icon">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="newsletter-section">
@@ -363,20 +460,80 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="newsletter-section__button">
-              Zapisz się
-              <svg
-                width="24"
-                height="24"
-                class="newsletter-section__button-svg"
-              >
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <div class="newsletter-section__button-container">
+              <button type="submit" class="newsletter-section__button">
+                Zapisz się
+                <svg
+                  width="24"
+                  height="24"
+                  class="newsletter-section__button-svg"
+                >
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="close-button"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Agencja</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__contact-info-list">
+        <li class="mobile-menu__contact-info-item">
+          <a href="#" class="mobile-menu__contact-info-link">+48 111 111 111</a>
+        </li>
+        <li class="mobile-menu__contact-info-item">
+          <a href="#" class="mobile-menu__contact-info-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__social-media-list">
+        <li class="mobile-menu__social-media-item">
+          <a href="#" class="mobile-menu__social-media-link">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-media-item">
+          <a href="#" class="mobile-menu__social-media-link">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-media-item">
+          <a href="#" class="mobile-menu__social-media-link">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-media-item">
+          <a href="#" class="mobile-menu__social-media-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <script
       defer

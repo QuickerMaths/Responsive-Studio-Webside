@@ -1,12 +1,23 @@
 .filters {
+  display: flex;
+  justify-content: center;
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: clamp(32rem, 100%, 70rem);
     margin-bottom: 5rem;
   }
 
   &__item {
     margin-right: 0.8rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px) {
+      & {
+        margin-bottom: 0px;
+      }
+    }
   }
 
   &__button {
