@@ -1,7 +1,7 @@
 .our-clients-section {
   &__container {
     margin: 0 auto;
-    width: clamp(32rem, 100%, 120rem);
+    width: clamp(32rem, 95%, 120rem);
     padding: 6rem 0;
 
     @media (min-width: 768px) {
