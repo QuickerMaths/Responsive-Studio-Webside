@@ -1,35 +1,18 @@
 .our-clients-section {
   &__container {
     margin: 0 auto;
-    width: clamp(32rem, 95%, 120rem);
+    width: clamp(32rem, 100%, 120rem);
     padding: 6rem 0;
-
-    @media (min-width: 650px) {
-      & {
-        width: clamp(32rem, 70%, 120rem);
-      }
-    }
 
     @media (min-width: 768px) {
       & {
-        & {
-          width: clamp(32rem, 100%, 120rem);
-        }
-      }
-    }
-
-    @media (min-width: 990px) {
-      & {
-        & {
-          width: clamp(32rem, 80%, 120rem);
-        }
+        max-width: 768px;
       }
     }
 
     @media (min-width: 1200px) {
       & {
-        width: clamp(32rem, 100%, 120rem);
-        padding: 9.4rem 0;
+        max-width: 1200px;
       }
     }
   }
@@ -42,22 +25,10 @@
   }
 
   &__svg-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3rem;
-    place-content: center;
-    place-items: center;
-
-    @media (min-width: 768px) {
-      & {
-        grid-template-columns: repeat(auto-fit, minmax(22.6rem, 1fr));
-      }
-    }
-
-    @media (min-width: 1200px) {
-      grid-template-columns: repeat(3, minmax(17rem, 9.2rem));
-      grid-auto-flow: column;
-    }
   }
 
   &__svg-icon {
