@@ -5,19 +5,13 @@
   &__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
-    width: clamp(32rem, 80%, 120rem);
-
-    @media (min-width: 768px) and (max-width: 1200px) {
-      & {
-        width: clamp(32rem, $footerWidth, 120rem);
-      }
-    }
+    width: clamp(32rem, 100%, 120rem);
 
     @media (min-width: 1200px) {
       & {
         flex-direction: row;
-        width: clamp(32rem, 95%, 120rem);
       }
     }
   }
@@ -27,7 +21,14 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        justify-content: space-between;
+        align-items: none;
+      }
     }
   }
 }

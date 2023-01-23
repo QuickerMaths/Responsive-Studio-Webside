@@ -1,8 +1,14 @@
 .logo {
   font-family: $fontRaleway;
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: #000000;
+
+  @media (min-width: 1200px) {
+    & {
+      font-size: 2.6rem;
+    }
+  }
 
   &__span {
     color: $blue;
